@@ -16,10 +16,11 @@ app.post('/text', (req, res) =>{
     // // const file = fs.readFileSync('path/to/data.txt', 'utf8');
     if(data.indexOf(req.body.data) >= 0) {
         console.log('found one')
+
     }
 
     console.log(req.body)
-    res.json({data: 'data'})
+    res.json({data: data})
 })
 
 
